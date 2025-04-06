@@ -1,0 +1,13 @@
+{
+  "specDir": ".spec",
+  "features": [
+    "scoring",
+    "validation"
+  ],
+  "language": "typescript",
+  "agent": "cursor",
+  "validation": {
+    "enabled": true,
+    "minimumScore": 0.7
+  }
+}

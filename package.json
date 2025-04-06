@@ -1,0 +1,25 @@
+{
+  "name": "spec-driven-dev",
+  "version": "0.1.0",
+  "description": "Spec Driven AI Development Framework",
+  "main": "scripts/spec_bootstrap.js",
+  "bin": {
+    "spec_bootstrap": "scripts/spec_bootstrap.js"
+  },
+  "scripts": {
+    "bootstrap": "node scripts/spec_bootstrap.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "documentation",
+    "specifications",
+    "ai",
+    "cursor",
+    "development"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+} 

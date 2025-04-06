@@ -1,0 +1,15 @@
+# Spec Validation Rules
+
+These rules help ensure that code changes are aligned with specifications.
+
+## Rule: Check Spec Before Implementation
+When implementing a new feature, ensure the relevant specification exists in the .spec/ directory.
+
+## Rule: Update Specs with Code Changes
+If code changes alter behavior, ensure the corresponding spec is updated.
+
+## Rule: Document All APIs
+New API endpoints must have corresponding documentation in .spec/api/.
+
+## Rule: Link Code to Specs
+Use consistent naming or references to link code back to specifications.
