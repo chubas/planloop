@@ -3,6 +3,10 @@ name: validation
 status: draft
 created: 2025-04-05
 updated: 2025-04-05
+relevant_files:
+  - scripts/spec_check_score.js
+  - .cursor/rules/planloop_framework.mdc
+  - .git/hooks/pre-commit
 ---
 
 # Validation Feature

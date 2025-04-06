@@ -65,6 +65,9 @@ if (options.features.length > 0) {
 name: ${feature}
 status: draft
 created: ${new Date().toISOString().split('T')[0]}
+relevant_files:
+  - src/${feature}/**/*
+  - "**/${feature}*.js"
 ---
 
 # ${feature.charAt(0).toUpperCase() + feature.slice(1)} Feature

@@ -3,6 +3,10 @@ name: scoring
 status: draft
 created: 2025-04-05
 updated: 2025-04-05
+relevant_files:
+  - scripts/spec_check_score.js
+  - .cursor/rules/planloop_framework.mdc
+  - spec.config.json
 ---
 
 # Scoring Feature

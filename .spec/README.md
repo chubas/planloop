@@ -22,6 +22,10 @@ name: feature-name
 status: draft|in-progress|complete
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
+relevant_files:
+  - path/to/file.js
+  - src/components/feature-component/
+  - "**/*.test.js" # Glob pattern for test files
 ---
 
 # Feature Name
@@ -41,3 +45,6 @@ How to validate this feature has been correctly implemented
 
 ## Validation Process
 Each code change is validated against the relevant specifications, receiving a score based on alignment. The goal is to maintain scores above 70% for all changes.
+
+## Reverse Indexing
+The `relevant_files` metadata allows for reverse indexing, making it easier to find which specifications relate to changed files. When validating changes, the system will automatically identify specs that reference the modified files.

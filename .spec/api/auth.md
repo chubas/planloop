@@ -3,6 +3,11 @@ name: Authentication API
 status: draft
 created: 2023-05-05
 updated: 2023-05-05
+relevant_files:
+  - src/api/auth.js
+  - src/controllers/auth.js
+  - src/models/user.js
+  - "src/middleware/auth*.js"
 ---
 
 # Authentication API
