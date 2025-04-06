@@ -1,14 +1,14 @@
 {
-  "name": "spec-driven-dev",
+  "name": "@chubas/planloop",
   "version": "0.1.0",
   "description": "Spec Driven AI Development Framework",
-  "main": "scripts/spec_bootstrap.js",
+  "main": "bin/cli.js",
   "bin": {
-    "spec_bootstrap": "scripts/spec_bootstrap.js"
+    "planloop": "bin/cli.js"
   },
   "scripts": {
-    "bootstrap": "node scripts/spec_bootstrap.js",
-    "validate": "node scripts/spec_check_score.js",
+    "bootstrap": "node bin/cli.js bootstrap",
+    "validate": "node bin/cli.js validate",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -18,13 +18,27 @@
     "cursor",
     "development"
   ],
-  "author": "",
+  "author": "chubas",
   "license": "MIT",
   "engines": {
     "node": ">=14.0.0"
   },
   "dependencies": {
-    "js-yaml": "^4.1.0",
-    "glob": "^8.1.0"
-  }
-} 
+    "commander": "^11.1.0",
+    "glob": "^8.1.0",
+    "js-yaml": "^4.1.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chubas/planloop.git"
+  },
+  "files": [
+    "bin/",
+    "commands/",
+    "README.md",
+    "LICENSE"
+  ]
+}

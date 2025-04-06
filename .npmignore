@@ -1,0 +1,7 @@
+.git/
+.spec/
+.cursor/
+node_modules/
+samples/
+scripts/
+.github/ 

@@ -51,31 +51,57 @@ The framework uses **Cursor AI as the first integration target** due to its cont
 
 ## Installation
 
-To bootstrap a new or existing project with Spec Driven Development:
+To use Planloop in your project:
 
 ```bash
-# Using NPX (recommended for new projects)
-npx spec-driven-dev . --with-hooks --features=auth,tasks
+# Install globally
+npm install -g @chubas/planloop
 
-# Or clone this repo and run locally
-git clone https://github.com/yourusername/spec-driven-dev.git
-cd spec-driven-dev
-npm install
-npm run bootstrap -- ../your-project --with-hooks --features=auth,tasks
+# Or use with npx
+npx @chubas/planloop <command> [options]
 ```
 
-## Command Line Options
+## Commands
 
+### Bootstrap a Project
+
+Initialize a new or existing project with Spec Driven Development:
+
+```bash
+npx @chubas/planloop bootstrap [directory] [options]
+```
+
+Options:
 - `--with-hooks`: Set up Git hooks for spec validation on commit
 - `--features=name1,name2`: Create initial feature specs
 - `--lang=typescript`: Specify the primary language used (default: typescript)
 - `--agent=cursor`: Specify which AI agent will be used (default: cursor)
 
+### Validate Spec Alignment
+
+Check if code changes align with specifications:
+
+```bash
+npx @chubas/planloop validate [options]
+```
+
+Options:
+- `-f, --files=file1.js,file2.js`: Specify files to validate
+- `-v, --verbose`: Show detailed output
+
+### Help
+
+Display help information:
+
+```bash
+npx @chubas/planloop help [command]
+```
+
 ## Using the Framework
 
 1. **Start with Specs**: Before implementing new features, create or update specs in `.spec/features/`
 2. **Implement Against Specs**: Use the specs as your guide for implementation
-3. **Validate Changes**: Run `node scripts/spec_check_score.js` to validate spec alignment
+3. **Validate Changes**: Run `npx @chubas/planloop validate` to verify spec alignment
 4. **Update As Needed**: Update specs or code to maintain alignment
 
 ## Directory Structure
